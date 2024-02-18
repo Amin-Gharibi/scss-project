@@ -1,0 +1,191 @@
+@media screen and (min-width: 576px) {
+    .svg__images {
+        width: 100%;
+    }
+
+    .home,
+    .about,
+    .support,
+    .services,
+    .apps,
+    .contact,
+    .footer {
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+    }
+
+    .contact {
+        &__primaryTitle,
+        &__description {
+            text-align: start;
+        }
+
+        &__description {
+            margin-bottom: 0;
+        }
+
+        &__linkContainer {
+            justify-content: start;
+        }
+    }
+
+    .home {
+        padding-top: 7rem;
+
+        &__image {
+            order: 1;
+        }
+    }
+
+    .about,
+    .support {
+        &__content {
+            text-align: right;
+        }
+    }
+
+    .about,
+    .apps {
+        &__image {
+            order: -1;
+        }
+    }
+
+    .apps {
+        &__title,
+        &__content {
+            text-align: right;
+        }
+    }
+
+    .copyright {
+        &__container {
+            display: block;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .nav {
+        &__list {
+            flex-direction: row;
+            column-gap: 2.5rem;
+        }
+
+        &__toggle {
+            display: none;
+        }
+    }
+
+    .change-theme {
+        position: unset;
+    }
+
+    .apps {
+        &__linksContainer {
+            justify-content: start;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        &__menu {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            right: 0;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 2rem;
+            padding: 2.5rem 0;
+            background-color: var(--container-color);
+            box-shadow: 0 0 4px rgb(0, 0, 0, 0.1);
+            transition: 0.4s;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 95vw;
+    }
+
+    .home,
+    .about,
+    .support,
+    .apps {
+        &__container {
+            column-gap: 6rem;
+        }
+    }
+
+    .button {
+        &__nav {
+            padding: 0.25rem 1rem;
+            display: block;
+        }
+    }
+
+    .svg__images {
+        width: 500px;
+    }
+
+    .services {
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+        }
+    }
+
+    .contact {
+        &__container {
+            grid-template-columns: 1.5fr 1.25fr 1fr;
+            align-items: center;
+        }
+    }
+
+    .footer {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        &__linksContainer {
+            margin: auto 0;
+        }
+    }
+
+    .copyright {
+        &__container {
+            display: block;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}

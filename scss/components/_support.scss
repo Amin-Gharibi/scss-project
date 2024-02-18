@@ -1,0 +1,10 @@
+.support {
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__content {
+        text-align: center;
+        transition: var(--theme-transition);
+    }
+}

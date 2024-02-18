@@ -1,0 +1,23 @@
+.apps {
+    &__title {
+        text-align: center;
+        transition: var(--theme-transition);
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__description {
+        margin-bottom: 1.5rem;
+        transition: var(--theme-transition);
+    }
+
+    &__linksContainer {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}

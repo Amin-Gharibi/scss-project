@@ -1,0 +1,33 @@
+.container {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding: 4rem 0 1rem 0;
+
+    &__title {
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-bottom: 1rem;
+        font-weight: bold;
+        transition: var(--theme-transition);
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+
+    &__description {
+        transition: var(--theme-transition);
+    }
+}
+
+.svg__images {
+    width: 400px;
+    justify-self: center;
+    transition: var(--theme-transition);
+}

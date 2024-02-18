@@ -1,0 +1,26 @@
+.services {
+    &__container {
+        margin-top: 1rem;
+    }
+
+    &__infoSec {
+        text-align: center;
+        row-gap: 1rem;
+        background-color: var(--container-color);
+        box-shadow: 0px 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+        border-radius: 0.5rem;
+        padding: 2rem 1.5rem;
+        transition: var(--theme-transition);
+    }
+
+    &__title {
+        transition: var(--theme-transition);
+        text-align: center;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+        transition: var(--theme-transition);
+    }
+}

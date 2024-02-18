@@ -1,0 +1,75 @@
+.header {
+    position: fixed;
+    max-width: 100%;
+    background-color: var(--body-color);
+    padding: 0.5rem 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: var(--theme-transition);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // this class would be added to nav__menu classes using js when client clicks on nav__toggle
+    .show-menu {
+        top: 4rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.5rem;
+        text-align: center;
+        transition: var(--theme-transition);
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: var(--theme-transition);
+    }
+
+    &__toggle {
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    &__title,
+    &__toggle,
+    &__link {
+        color: var(--title-color);
+        transition: var(--theme-transition);
+    }
+
+    &__link {
+        text-wrap: nowrap;
+        transition: var(--theme-transition);
+    }
+}
+
+.scroll-header {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.active-link {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        bottom: -0.75rem;
+        left: 45%;
+        border-radius: 50%;
+        background-color: var(--title-color);
+        transition: var(--theme-transition);
+    }
+}

@@ -1,0 +1,35 @@
+.contact {
+    &__primaryTitle,
+    &__description,
+    &__secondaryTitle,
+    &__secondaryDescription {
+        text-align: center;
+        transition: var(--theme-transition);
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+    }
+
+    &__secondaryTitle {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    &__secondaryDescription {
+        text-wrap: nowrap;
+    }
+
+    &__option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__linkContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

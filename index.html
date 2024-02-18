@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <!-- link bootstrap icons to the project -->
+    <link rel="stylesheet" href="./style/bootstrap-icons.css" />
+    <!-- link the main css file -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <script>
+      const pageTheme = localStorage.getItem("theme")
+      if (pageTheme === "dark") {
+        document.body.classList.add("dark-theme")
+      }
+    </script>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a class="nav__title">Amin Gharibi</a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active-link" id="nav__link6">صفحه اصلی</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link" id="nav__link5">درباره ما</a></li>
+            <li class="nav__item"><a href="#support" class="nav__link" id="nav__link4">پشتیبانی</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link" id="nav__link3">خدمات</a></li>
+            <li class="nav__item"><a href="#apps" class="nav__link" id="nav__link2">برنامه</a></li>
+            <li class="nav__item"><a href="#contact-us" class="nav__link" id="nav__link1">ارتباط با ما</a></li>
+            <i class="change-theme bi bi-toggle-off"></i>
+          </ul>
+        </div>
+        <div class="nav__toggle">
+          <i class="bi bi-list-nested"></i>
+        </div>
+        <a href="#" class="button button__nav">لورم ایپسوم</a>
+      </nav>
+    </header>
+    <main>
+      <section class="home section" id="home">
+        <div class="home__container container">
+          <article class="svg__images home__image">
+            <img src="./images/1.svg" alt="home-image">
+          </article>
+          <article class="home__content">
+            <h1 class="home__title">لورم ایپسوم متن ساختگی <br><span>لورم ایپسوم</span></h1>
+            <p class="home__description">
+              لورم ایپسوم متن ساختگی  با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است
+            </p>
+            <a href="#" class="button">لورم ایپسوم</a>
+          </article>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="about__container container">
+          <article class="about__content">
+            <h1 class="about__title section__title">لورم ایپسوم متن ساختگی <br><span>درباره ما</span></h1>
+            <p class="about__description section__description">
+              لورم ایپسوم متن ساختگی  با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است
+            </p>
+          </article>
+          <article class="svg__images about__image">
+            <img src="./images/2.svg" alt="about-image">
+          </article>
+        </div>
+      </section>
+      <section class="support section" id="support">
+        <div class="support__container container">
+          <article class="support__content">
+            <h1 class="support__title section__title">لورم ایپسوم متن ساختگی <br><span>پشتیبانی</span></h1>
+            <p class="support__description section__description">
+              لورم ایپسوم متن ساختگی  با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است
+            </p>
+          </article>
+          <article class="svg__images support__image">
+            <img src="./images/3.svg" alt="support-image">
+          </article>
+        </div>
+      </section>
+      <section class="services section" id="services">
+        <h2 class="services__title section__title">لورم ایپسوم متن ساختگی</h2>
+        <div class="services__container container">
+          <article class="services__infoSec">
+            <h3 class="services__title section__title">لورم ایپسوم</h3>
+            <i class="services__icon bi bi-browser-chrome"></i>
+            <p class="services__description section__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است</p>
+            <div>
+              <a href="#" class="button button__services">مشاهده بیشتر</a>
+            </div>
+          </article>
+          <article class="services__infoSec">
+            <h3 class="services__title section__title">لورم ایپسوم</h3>
+            <i class="services__icon bi bi-browser-edge"></i>
+            <p class="services__description section__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است</p>
+            <div>
+              <a href="#" class="button button__services">مشاهده بیشتر</a>
+            </div>
+          </article>
+          <article class="services__infoSec">
+            <h3 class="services__title section__title">لورم ایپسوم</h3>
+            <i class="services__icon bi bi-browser-firefox"></i>
+            <p class="services__description section__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است</p>
+            <div>
+              <a href="#" class="button button__services">مشاهده بیشتر</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="apps section" id="apps">
+        <div class="apps__container container">
+          <article class="apps__content">
+            <h1 class="apps__title section__title">لورم ایپسوم متن ساختگی <br><span>پشتیبانی</span></h1>
+            <p class="apps__description section__description">
+              لورم ایپسوم متن ساختگی  با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است
+            </p>
+            <div class="apps__linksContainer">
+              <a href="#" class="button__apps button">App Store<i class="bi bi-apple"></i></a>
+              <a href="#" class="button__apps button">Google Play<i class="bi bi-google-play"></i></a>
+            </div>
+          </article>
+          <article class="svg__images apps__image">
+            <img src="./images/4.svg" alt="apps-image">
+          </article>
+        </div>
+      </section>
+      <section class="contact section" id="contact-us">
+        <div class="contact__container container">
+          <article class="contact__content">
+            <h1 class="contact__primaryTitle section__title">ارتباط با ما</h1>
+            <p class="contact__description section__description">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی  با تولید سادگی نامفهوم از صنعت. چاپ و با استفاده از طراحان گرافیک است
+            </p>
+          </article>
+            <article class="cantact__optionsContainer">
+              <div class="contact__option">
+                <h3 class="contact__secondaryTitle section__title">شماره تماس:</h3>
+                <p class="contact__secondaryDescription">0903-193-8364</p>
+              </div>
+              <div class="contact__option">
+                <h3 class="contact__secondaryTitle section__title">ایمیل:</h3>
+                <p class="contact__secondaryDescription">mohdamingharibi@gmail.com</p>
+              </div>
+              <div class="contact__option">
+                <h3 class="contact__secondaryTitle section__title">آدرس:</h3>
+                <p class="contact__secondaryDescription">استان هرمزگان</p>
+              </div>
+            </article>
+            <article class="contact__linkContainer">
+              <a href="#" class="button__contact button">تماس با ما</a>
+            </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer__section footer">
+        <div class="footer__container footer">
+          <article class="footer__content">
+            <h1 class="footer__primaryTitle section__title">Amin Gharibi</h1>
+            <p class="footer__description section__description">
+              لورم ایپسوم متن ساختگی
+            </p>
+          </article>
+          <article class="footer__options">
+            <h3 class="footer__secondaryTitle">خدمات ما</h3>
+            <ul>
+              <li><a href="#" class="footer__links">قیمت ها</a></li>
+              <li><a href="#" class="footer__links">تخفیف ها</a></li>
+              <li><a href="#" class="footer__links">گزارش باگ</a></li>
+              <li><a href="#" class="footer__links">قوانین و مقررات</a></li>
+            </ul>
+          </article>
+          <article class="footer__options">
+            <h3 class="footer__secondaryTitle">شرکت ما</h3>
+            <ul>
+              <li><a href="#" class="footer__links">مقالات</a></li>
+              <li><a href="#" class="footer__links">قرارداد ها</a></li>
+              <li><a href="#" class="footer__links">لورم ایپسوم</a></li>
+            </ul>
+          </article>
+          <article class="footer__options">
+            <h3 class="footer__secondaryTitle">لورم ایپسوم</h3>
+            <ul>
+              <li><a href="#" class="footer__links">پشتیبانی</a></li>
+              <li><a href="#" class="footer__links">پرسش و پاسخ</a></li>
+              <li><a href="#" class="footer__links">حمایت از ما</a></li>
+            </ul>
+          </article>
+            <article class="footer__linksContainer">
+              <a href="https://t.me/AmiinGharibi" target="_blank"><i class="button__footer bi bi-telegram"></i></a>
+              <a href="https://x.com/LadHust1er" target="_blank"><i class="button__footer bi bi-twitter"></i></a>
+              <a href="https://instagram.com/amiingharibi" target="_blank"><i class="button__footer bi bi-instagram"></i></a>
+            </article>
+        </div>
+      </section>
+      <section class="copyright__section">
+        <div class="footer__container copyright__container footer">
+          <article class="copyright__content">
+            <p class="copyright__title">محمدامین غریبی - 1402 <i class="bi bi-c-circle"></i></p>
+          </article>
+        </div>
+      </section>
+    </footer>
+
+    <!-- this would be shown as you scroll down -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="scrollup__icon bi bi-arrow-up"></i>
+    </a>
+    <!-- link the main javascript file to the project -->
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
